@@ -19,3 +19,19 @@ Used architecture: MVC
 
 Screenshots:
 
+1. Launch Screen
+
+![](/Screenshots/7%20DRINK.png)
+
+2. Main Screen
+
+![](/Screenshots/3%20DRINK.png) ![](/Screenshots/1%20DRINK.png) ![](/Screenshots/6%20DRINK.png) ![](/Screenshots/8%20DRINK.png)
+
+3. Alert
+
+![](/Screenshots/4%20DRINK.png)
+
+4. Second (detail) screen
+
+![](/Screenshots/2%20DRINK.png) ![](/Screenshots/5%20DRINK.png)
+
