@@ -21,7 +21,7 @@ func getData(keyWord: String, completion: @escaping (Drinks)->()) {
             return
         }
         guard let data = data else { return }
-        print(data)
+       // print(data)
         guard let drinks = try? JSONDecoder().decode(Drinks.self, from: data) else {
             DispatchQueue.main.async {
                 let name = Notification.Name(rawValue: "co.mariam.error")
@@ -29,7 +29,7 @@ func getData(keyWord: String, completion: @escaping (Drinks)->()) {
             }
             return
         }
-        print(drinks)
+       // print(drinks)
         completion(drinks)
     }.resume()
 }
