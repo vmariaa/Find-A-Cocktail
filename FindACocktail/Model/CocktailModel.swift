@@ -8,6 +8,7 @@
 import Foundation
 
 struct Drink: Codable {
+    var favorited: Bool?
     let idDrink: String
     let strDrink: String
     var strGlass: String?
@@ -48,5 +49,7 @@ struct Drink: Codable {
 struct Drinks: Codable {
     var drinks: [Drink]
 }
+
+
 
 

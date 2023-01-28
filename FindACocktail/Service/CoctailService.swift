@@ -21,7 +21,6 @@ func getData(keyWord: String, completion: @escaping (Drinks)->()) {
             return
         }
         guard let data = data else { return }
-       // print(data)
         guard let drinks = try? JSONDecoder().decode(Drinks.self, from: data) else {
             DispatchQueue.main.async {
                 let name = Notification.Name(rawValue: "co.mariam.error")
@@ -29,7 +28,6 @@ func getData(keyWord: String, completion: @escaping (Drinks)->()) {
             }
             return
         }
-       // print(drinks)
         completion(drinks)
     }.resume()
 }
@@ -54,8 +52,6 @@ func getDetails(id: String, completion: @escaping (Drinks)->()) {
     }.resume()
 }
 
-
-
 func getImage(url: URL, completion: @escaping (UIImage)->()) {
  
     let urlRequest = URLRequest(url: url)
@@ -70,3 +66,4 @@ func getImage(url: URL, completion: @escaping (UIImage)->()) {
         completion(image)
     }.resume()
 }
+

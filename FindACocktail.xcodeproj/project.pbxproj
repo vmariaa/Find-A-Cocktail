@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		E411F4A12892E7C100406BE1 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E411F4A02892E7C100406BE1 /* StringExtension.swift */; };
+		E45706082980100300E3C6E3 /* DetailScreenConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45706072980100300E3C6E3 /* DetailScreenConfiguration.swift */; };
+		E4D820EC297C727F00EF0DBE /* FavouritesViewControllersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D820EB297C727F00EF0DBE /* FavouritesViewControllersViewController.swift */; };
+		E4D820EE297C796700EF0DBE /* TableViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D820ED297C796700EF0DBE /* TableViewConfiguration.swift */; };
+		E4D820F0297C9D4F00EF0DBE /* FavoriteDrinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D820EF297C9D4F00EF0DBE /* FavoriteDrinks.swift */; };
+		E4D820F2297CACD400EF0DBE /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D820F1297CACD300EF0DBE /* TabBarViewController.swift */; };
+		E4EE7DAF29816F7A006389E4 /* FavoriteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EE7DAE29816F7A006389E4 /* FavoriteDetailViewController.swift */; };
 		E4F56B75288FDAAC00420F4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F56B74288FDAAC00420F4B /* AppDelegate.swift */; };
 		E4F56B77288FDAAC00420F4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F56B76288FDAAC00420F4B /* SceneDelegate.swift */; };
 		E4F56B79288FDAAC00420F4B /* CocktailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F56B78288FDAAC00420F4B /* CocktailsViewController.swift */; };
@@ -22,6 +28,12 @@
 
 /* Begin PBXFileReference section */
 		E411F4A02892E7C100406BE1 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		E45706072980100300E3C6E3 /* DetailScreenConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreenConfiguration.swift; sourceTree = "<group>"; };
+		E4D820EB297C727F00EF0DBE /* FavouritesViewControllersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewControllersViewController.swift; sourceTree = "<group>"; };
+		E4D820ED297C796700EF0DBE /* TableViewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewConfiguration.swift; sourceTree = "<group>"; };
+		E4D820EF297C9D4F00EF0DBE /* FavoriteDrinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDrinks.swift; sourceTree = "<group>"; };
+		E4D820F1297CACD300EF0DBE /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		E4EE7DAE29816F7A006389E4 /* FavoriteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDetailViewController.swift; sourceTree = "<group>"; };
 		E4F56B71288FDAAC00420F4B /* FindACocktail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindACocktail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4F56B74288FDAAC00420F4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4F56B76288FDAAC00420F4B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,8 +62,11 @@
 		E411F4A22893F4EB00406BE1 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E4D820F1297CACD300EF0DBE /* TabBarViewController.swift */,
 				E4F56B78288FDAAC00420F4B /* CocktailsViewController.swift */,
 				E4F56B90288FFDC700420F4B /* DetailViewController.swift */,
+				E4D820EB297C727F00EF0DBE /* FavouritesViewControllersViewController.swift */,
+				E4EE7DAE29816F7A006389E4 /* FavoriteDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -60,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				E4F56B8A288FDAEE00420F4B /* CocktailModel.swift */,
+				E4D820EF297C9D4F00EF0DBE /* FavoriteDrinks.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -90,6 +106,15 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		E4833C852985400A002FE26F /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				E4D820ED297C796700EF0DBE /* TableViewConfiguration.swift */,
+				E45706072980100300E3C6E3 /* DetailScreenConfiguration.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		E4F56B68288FDAAC00420F4B = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +138,7 @@
 				E411F4A42893F51A00406BE1 /* View */,
 				E411F4A22893F4EB00406BE1 /* Controller */,
 				E411F4A52893F58700406BE1 /* Extension */,
+				E4833C852985400A002FE26F /* Helper */,
 				E411F4A62893F65000406BE1 /* Service */,
 				E4F56B74288FDAAC00420F4B /* AppDelegate.swift */,
 				E4F56B76288FDAAC00420F4B /* SceneDelegate.swift */,
@@ -195,11 +221,17 @@
 			files = (
 				E4F56B79288FDAAC00420F4B /* CocktailsViewController.swift in Sources */,
 				E4F56B8D288FE37300420F4B /* CocktailCell.swift in Sources */,
+				E4EE7DAF29816F7A006389E4 /* FavoriteDetailViewController.swift in Sources */,
 				E4F56B75288FDAAC00420F4B /* AppDelegate.swift in Sources */,
+				E45706082980100300E3C6E3 /* DetailScreenConfiguration.swift in Sources */,
 				E4F56B89288FDAE300420F4B /* CoctailService.swift in Sources */,
 				E411F4A12892E7C100406BE1 /* StringExtension.swift in Sources */,
 				E4F56B8B288FDAEE00420F4B /* CocktailModel.swift in Sources */,
+				E4D820F2297CACD400EF0DBE /* TabBarViewController.swift in Sources */,
+				E4D820EE297C796700EF0DBE /* TableViewConfiguration.swift in Sources */,
+				E4D820F0297C9D4F00EF0DBE /* FavoriteDrinks.swift in Sources */,
 				E4F56B77288FDAAC00420F4B /* SceneDelegate.swift in Sources */,
+				E4D820EC297C727F00EF0DBE /* FavouritesViewControllersViewController.swift in Sources */,
 				E4F56B91288FFDC700420F4B /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,7 +308,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -330,7 +362,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
