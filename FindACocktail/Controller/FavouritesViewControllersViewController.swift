@@ -101,7 +101,7 @@ extension FavouritesViewController: UISearchBarDelegate {
             FavoriteDrinks.shared.displayedDrinks = FavoriteDrinks.shared.favoritedDrinks
         } else {
             for drink in FavoriteDrinks.shared.favoritedDrinks {
-                if drink.strDrink.starts(with: searchText) {
+                if drink.strDrink.lowercased().starts(with: searchText.lowercased()) {
                     FavoriteDrinks.shared.displayedDrinks.append(drink)
                 }
             }

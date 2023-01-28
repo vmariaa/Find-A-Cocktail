@@ -160,7 +160,7 @@ class DetailScreenConfig {
         bottomView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -10).isActive = true
 
         bottomView.layer.cornerRadius = 13
-        bottomView.backgroundColor = .white.withAlphaComponent(0.99)
+        bottomView.backgroundColor = UIColor(named: "CellColor")!.withAlphaComponent(0.99)
         bottomView.layer.shadowColor = UIColor.black.cgColor
         bottomView.layer.shadowOffset = CGSize(width: 5, height: 5)
         bottomView.layer.shadowRadius = 9

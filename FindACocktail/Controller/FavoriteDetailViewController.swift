@@ -27,7 +27,6 @@ class FavoriteDetailViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
 
        displayedDrink = DetailScreenConfig.shared.checkForFavorite(displayedDrink: displayedDrink, addToFavoritesButton: addToFavoritesButton)
-
     }
     
     override func viewDidLoad() {
